@@ -13,6 +13,14 @@ $breakpoints: (
     xl: 1260px
 );
 
+
+/* bootstrap media queries */
+$xs: 480px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1300px;
+
 $container-max-width: 1200px;
 
 // Z-Index Stack
@@ -27,7 +35,7 @@ $z-layers: (
 // Colors
 //
 // Grayscale.
-
+$background-color: #F3F3F3;
 $gray-darkest: #373a3c;
 $gray-dark: #55595c;
 $gray: #818a91;
@@ -81,3 +89,5 @@ $box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
 $box-shadow-elevated: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
 
 $border-radius: 0.25rem;
+
+$primary-color: #E77195;

@@ -1,9 +1,22 @@
 .header {
-    padding: $spacing-y 0;
-
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    padding: 30px 0 80px;
+    @media (min-width: $md) {
+        padding: 100px 0 120px;
     }
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 27px;
+    color: $primary-color;
+}
+
+#heading {
+    margin-top: 50px;
+    @media (min-width: $md) {
+        margin-top: 100px;
+        width: 50%;
+    }
+    font-weight: bold;
+    font-size: 35px;
 }

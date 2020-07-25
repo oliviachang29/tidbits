@@ -1,0 +1,16 @@
+{% for quote in collections.quotes %}
+  <div class="quote-container" data-tags="{% for tag in quote.tags %}{{ tag }} {% endfor %}">
+    <p class="quote-text">{{ quote.text }}</p>
+    <div class="quote-bottom">
+      {% if quote.source %}
+        <a class="quote-author-n-src" {% if quote.link %} href="{{quote.link}}" target="_blank" {%endif%}>{{quote.source}}</a>
+      {% endif %}
+      <p class="quote-tags">
+        {% for tag in quote.tags %}
+          {{ tag }}{% if not loop.last %},
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+{% endfor %}

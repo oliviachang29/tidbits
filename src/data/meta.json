@@ -1,7 +1,8 @@
 {
-    "title": "Eleventastic",
-    "description": "An Eleventy Starter Kit",
-    "url": "https://eleventastic.netlify.app",
+    "title": "Tidbits",
+    "emoji": "🧠",
+    "description": "Fascinating takes and funny quotes found on the interwebs.",
+    "url": "https://tidbits.oliviachang.me",
     "lang": "en",
     "locale": "en_us"
 }

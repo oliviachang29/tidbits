@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Neue Hass Grotesk';
+    src: url('/assets/fonts/NeueHaasGrotesk-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Hass Grotesk';
+    src: url('/assets/fonts/NeueHaasGrotesk-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Hass Grotesk';
+    src: url('/assets/fonts/NeueHaasGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Neue Hass Grotesk';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 h2,
 h3,
@@ -30,5 +57,14 @@ p {
 
     @include mq(md) {
         font-size: 2rem;
+    }
+}
+
+a {
+    color: $primary-color;
+    transition: .1s all;
+    &:hover {
+        color: darken($color: $primary-color, $amount: 10);
+        text-decoration: none;
     }
 }

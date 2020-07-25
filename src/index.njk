@@ -4,6 +4,11 @@ eleventyNavigation:
   key: Home
 ---
 
-<div class="container">
-    <h1>A blank 11ty project.</h1>
+<div class="row quotes-row">
+  <div class="col-lg-8">
+    {% include 'quotes.njk' %}
+  </div>
+  <div class="col-lg-4">
+    {% include 'tags.njk' %}
+  </div>
 </div>

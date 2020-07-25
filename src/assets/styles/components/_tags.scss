@@ -1,0 +1,49 @@
+@mixin button-active {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  box-shadow: none !important;
+}
+
+$tags-padding-top: 30px;
+.tags {
+  margin-top: -$tags-padding-top;
+  padding-top: $tags-padding-top;
+
+  @media (max-width: $lg) {
+    margin-bottom: 40px
+  }
+}
+
+.tag {
+  margin-bottom: 10px;
+  color: $primary-color;
+  border-color: $primary-color;
+  background-color: transparent;
+  font-weight: 500;
+
+  &:hover, &:active, &:focus {
+    @include button-active();
+  }
+}
+
+.btn-primary.active {
+  @include button-active();
+}
+
+.tags-filter-toggle {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $lg) {
+  .tags-filter-toggle {
+    display: none;
+  }
+
+  .collapse {
+    display: block !important;
+  }
+}
+
+.emoji {
+  margin-right: 10px;
+}
