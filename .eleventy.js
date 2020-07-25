@@ -34,6 +34,7 @@ module.exports = function (config) {
 
     config.addCollection('quotes', async (collection) => {
         let response = await axios.get(process.env.API_URL)
+        console.log(process.env)
         collection = response.data
 
         collection.map((quote) => {
