@@ -79,3 +79,9 @@
     background-color: transparent;
     -webkit-appearance: none;
 }
+
+@mixin button-active {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  box-shadow: none !important;
+}

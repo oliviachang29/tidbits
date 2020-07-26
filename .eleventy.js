@@ -61,7 +61,7 @@ module.exports = function (config) {
     config.addCollection('tags', function (collection) {
         collection = allTags
 
-        collection.sort((a, b) => (a < b ? 1 : -1))
+        collection.sort((a, b) => (a > b ? 1 : -1))
 
         return collection
     })

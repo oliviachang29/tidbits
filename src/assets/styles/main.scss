@@ -39,3 +39,7 @@
 .primary-color {
   color: $primary-color
 }
+
+.btn-filled-in {
+  @include button-active
+}
