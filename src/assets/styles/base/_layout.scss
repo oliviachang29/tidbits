@@ -31,6 +31,9 @@ html, body {
 }
 
 .container {
-    // width: 50%;
     padding: 30px;
+    @media (min-width: $lg) {
+        max-width: none;
+        padding: 30px 5% 30px 50px;
+    }
 }

@@ -41,5 +41,6 @@
 }
 
 .btn-filled-in {
-  @include button-active
+  @include button-active;
+  color: white;
 }
